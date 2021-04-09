@@ -1,0 +1,39 @@
+{
+  "name": "counter",
+  "description": "Counter Smart Contract\n\nThis project contains implementation of counter backed by blockchain.\n\n[AssemblyScript](https://github.com/AssemblyScript/assemblyscript) compiles strictly typed TypeScript to WebAssembly using Binaryen. See the [AssemblyScript wiki](https://github.com/AssemblyScript/assemblyscript/wiki) for further instructions and documentation.",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node asconfig.js",
+    "deploy:contract": "near deploy",
+    "deploy": "yarn build && yarn deploy:contract && yarn deploy:pages",
+    "deploy:dev": "yarn build && near dev-deploy",
+    "prestart": "yarn build && yarn deploy:contract",
+    "dev": "yarn deploy:dev && yarn watch",
+    "watch": "nodemon --watch assembly -e ts --exec \"env-cmd -f ./neardev/dev-account.env parcel src/index.html\"",
+    "start": "env-cmd -f ./neardev/dev-account.env parcel src/index.html",
+    "test": "asp && yarn jest",
+    "test:ci": "env NODE_ENV=ci yarn test",
+    "asp": "asp --verbose",
+    "jest": "yarn build && jest test"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "~26.6.3",
+    "jest-environment-node": "~26.6.2",
+    "near-sdk-as": "^0.4.2",
+    "near-cli": "^1.6.0",
+    "nodemon": "~2.0.7",
+    "parcel-bundler": "~1.12.5"
+  },
+  "jest": {
+    "testEnvironment": "near-cli/test_environment",
+    "testPathIgnorePatterns": [
+      "<rootDir>/assembly/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "near-api-js": "^0.39.0",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
