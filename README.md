@@ -7,16 +7,16 @@ Star me
 
 ## Description
 
-This contract implements simple counter backed by storage on blockchain.
-Contract in `assembly/main.ts` provides methods to increment / decrement counter and get it's current value or reset.
+This contract implements simple voter  backed by storage on blockchain.
+Contract in `assembly/main.ts` provides methods to voter  and get it's current accoutId.
 
-Plus and minus buttons increase and decrease value correspondingly. When button L is toggled, counter will add or minus 10 a time. RS button is for reset. LE and RE buttons to let the robot wink to you.
+Vote buttons increase nose count.
 
 ## To Run
 Open in the Gitpod link above or clone the repository.
 
 ```
-git clone https://github.com/near-examples/counter
+git clone https://github.com/shepf/NCD--near-star-maing
 ```
 
 
