@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || 'counter'; /* TODO: fill this in! */
+const CONTRACT_NAME = process.env.CONTRACT_NAME || 'docker.testnet'; /* TODO: fill this in! */
 
 function getConfig (env) {
   switch (env) {

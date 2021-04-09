@@ -26085,7 +26085,7 @@ __exportStar(require("./browser-connect"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","./browser-connect":"../node_modules/near-api-js/lib/browser-connect.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-var CONTRACT_NAME = "dev-1617957818068-1608182" || 'counter';
+var CONTRACT_NAME = "dev-1617971876288-2045767" || 'docker.testnet';
 /* TODO: fill this in! */
 
 function getConfig(env) {
@@ -26330,7 +26330,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35863" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44395" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
