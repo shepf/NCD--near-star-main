@@ -1,7 +1,7 @@
-Counter example in AssemblyScript
+Star me 
 =================================
 
-[![Open in Gitpod!](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/counter)
+[![Open in Gitpod!](https://gitpod.io/button/open-in-gitpod.svg)]https://gitpod.io/#https://github.com/shepf/NCD--near-star-main)
 
 <!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
 
